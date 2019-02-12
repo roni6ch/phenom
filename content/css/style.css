@@ -411,3 +411,74 @@
 			transform: rotate(-180deg);
 			background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
 		}
+
+		.fifthSection{
+			padding:38px 80px 124px; overflow: auto;
+		}
+		.fifthSection .Rectangle {
+			width: 320px;
+			height: 320px;
+			transform: rotate(-315deg);
+			background-color: #ffffff;
+			border:1px solid #e3e3e3;
+		}
+		.fifthSection .Rectangle img{
+			transform: rotate(-45deg);
+			margin:93px 135px 19px;
+		}
+		.fifthSection	.find-your-talent {
+			font-family: 'proxima_nova_rgregular';
+			font-size: 32px;
+			font-weight: 900;
+			font-style: normal;
+			text-transform: uppercase;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: #3f3f3f;
+		}
+		.fifthSection 	.Work-from-Home {
+			width: 173px;
+			height: 24px;
+			font-family: ProximaNova;
+			font-size: 18px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: -0.2px;
+			text-align: center;
+			color: #0f4c97;    transform: rotate(-45deg);
+		}
+		.fifthSection 	.Rectangle h5 {
+			width: 34px;
+			height: 20px;
+			font-family: 'proxima_nova_rgregular';
+			font-size: 16px;
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: -0.2px;
+			text-align: center;
+			color: #3f3f3f;    transform: rotate(-45deg);
+		}
+		.sixthSection .sixthWrapper{
+
+			width: 1440px;
+			height: 560px;
+		}
+		.sixthSection p{
+			text-transform: uppercase;
+			font-family: 'proxima_nova_rgregular';
+			color: #3f3f3f;
+			font-size: 32px;
+			font-weight: 900;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			text-align: center;
+			
+		}
