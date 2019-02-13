@@ -24,6 +24,14 @@
 
 	}
 	@font-face {
+		font-family: 'ProximaNova-SemiboldIt';
+		src: url('../fonts/ProximaNova-SemiboldIt.otf');
+	font-weight: normal;
+		font-style: normal;
+
+}
+	
+	@font-face {
 			font-family: 'proxima_nova_blblack';
 			src: url('../fonts/proxima_nova_black.eot');
 			src: url('../fonts/proxima_nova_black.eot?#iefix') format('embedded-opentype'),
@@ -168,6 +176,7 @@
 		object-fit: contain;
 		}
 		.rightNav {margin-left:94.5px;}
+		.rightNav li{cursor: pointer;}
 		.rightNav img{float: left;    margin-top: 3px;}
 		.rightNav p{
 		font-family: 'proxima_nova_rgregular';
@@ -249,6 +258,7 @@
 		height: 48px;
 		background-color: #2da9dc;
 		border-width:0px;
+		cursor: pointer;
 	}
 	.secondSection .whiteBorder .Find-Jobs {
 		width: 72px;
@@ -480,5 +490,118 @@
 			line-height: normal;
 			letter-spacing: 0.5px;
 			text-align: center;
+			margin-bottom:38px;
 			
+		}
+
+		.sixthWrapper{		
+			background: url('../images/bitmap-copy-3.jpg') center center no-repeat;
+			height:560px; width:100%;
+			padding:142px 242px;
+		}
+		  
+		  .sixthSection  .Rectangle-Copy-6 {
+			width: 100%;
+			height: 308px;
+			background-color: #ffffff;
+			position:relative;
+		  }
+		  .sixthSection    .Bitmap-Copy-4 {
+			width: 200px;
+			height: 200px;
+			object-fit: contain;
+			position: absolute;
+			top:-66px;
+			left:84px;
+		  }
+		  .sixthSection    .Line-Copy {
+			width: 80px;
+			height: 1px;
+			background: #d1d1d1;
+			margin: 0 auto;
+		  }.sixthSectionLeft{width:355px;
+			height: 100%;    float: left;
+			margin: 166px auto 0px;
+		}
+		.sixthSection   .Group-12-Copy-3 {
+			width: 52px;
+			height: 52px;
+			object-fit: contain;
+			position: absolute; left:-27px; top:128px;
+		  }.sixthSection .Kate-Allison {
+			margin: 0 auto;
+			font-family: 'SimpleJoys';
+			font-size: 44px;
+			font-weight: normal;
+			font-style: normal;
+			text-transform: capitalize;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: -0.9px;
+			text-align: center;
+			color: #0f4c97;
+			margin-top:14px;
+		  }
+
+		  .sixthSection   .Revenue-Manager-at-C {
+			font-family: 'proxima_nova_rgregular';
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: #3f3f3f;
+		  }
+
+		  .sixthSection   .Line-3-Copy {
+			width: 2px;
+    height: 228px;
+    background: #ededed;
+    float: right;
+    position: absolute;
+    left: 355px;
+    top: 39px;
+		  }
+
+		  .sixthSection    .sixthSectionRight{
+			  padding:67px 110px 0px 97px;
+			  width:599px;
+			  float:right;
+		  }
+
+		  .sixthSection 	  .People-will-most-li {
+			font-family: 'ProximaNova-SemiboldIt';
+			font-size: 24px;
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.71;
+			letter-spacing: normal;
+			color: #3f3f3f;
+			text-transform: inherit;
+			;
+		  }
+		  .sixthSection   .Group-12-Copy-2 {
+			width: 52px;
+			height: 52px;
+			object-fit: contain;position: absolute; right:-27px; top:128px;
+		  }
+
+
+		  .sixthSection  .dots {
+			margin: 22px auto;
+				width: 108px;
+			}
+			.sixthSection .dots span{
+				width: 10px;
+				height: 10px;
+				transform: rotate(-315deg);
+				margin-right:10px;
+				display: inline-block;
+				border:1px solid #fff;
+			}
+			.sixthSection .dots span:nth-child(2){
+			background-color: #ffffff;
 		}
