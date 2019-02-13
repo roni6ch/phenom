@@ -443,7 +443,9 @@ li.nav-item {
 	background-color: transparent;
 	padding-bottom: 19px;
 }
-
+#searchWrapper .searchResults{
+	display:none;
+}
 .magnifer2>div {
 	width: 20px;
 	height: 20px;

@@ -26,5 +26,13 @@ $(function() {
         $(this).find(".Group-20-Copy-11").show();
         $(this).find(".hoveredImage").hide();
     });
+
+    
+    $("#searchInput").focusIn(function(){
+        alert("x");
+        $(".searchResults").fadeIn();
+    }, function(){  
+        $(".searchResults").fadeOut();
+    })
     
 });
