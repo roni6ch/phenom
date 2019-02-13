@@ -11,8 +11,8 @@
 			font-style: normal;
 
 	}
-	@font-face {
-			font-family: 'proxima_nova_ltsemibold';
+				@font-face {
+						font-family: 'proxima_nova_ltsemibold';
 			src: url('../fonts/proxima_nova_semibold.eot');
 			src: url('../fonts/proxima_nova_semibold.eot?#iefix') format('embedded-opentype'),
 					url('../fonts/proxima_nova_semibold.woff2') format('woff2'),
@@ -61,8 +61,110 @@
 		font-weight: normal;
 		font-style: normal;
 		}
-		
-		
+		.animated {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		  }
+		  @-webkit-keyframes bounceIn {
+			from,
+			20%,
+			40%,
+			60%,
+			80%,
+			to {
+			  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+		  
+			0% {
+			  opacity: 0;
+			  -webkit-transform: scale3d(0.3, 0.3, 0.3);
+			  transform: scale3d(0.3, 0.3, 0.3);
+			}
+		  
+			20% {
+			  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+			  transform: scale3d(1.1, 1.1, 1.1);
+			}
+		  
+			40% {
+			  -webkit-transform: scale3d(0.9, 0.9, 0.9);
+			  transform: scale3d(0.9, 0.9, 0.9);
+			}
+		  
+			60% {
+			  opacity: 1;
+			  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+			  transform: scale3d(1.03, 1.03, 1.03);
+			}
+		  
+			80% {
+			  -webkit-transform: scale3d(0.97, 0.97, 0.97);
+			  transform: scale3d(0.97, 0.97, 0.97);
+			}
+		  
+			to {
+			  opacity: 1;
+			  -webkit-transform: scale3d(1, 1, 1);
+			  transform: scale3d(1, 1, 1);
+			}
+		  }
+		  
+		  @keyframes bounceIn {
+			from,
+			20%,
+			40%,
+			60%,
+			80%,
+			to {
+			  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+		  
+			0% {
+			  opacity: 0;
+			  -webkit-transform: scale3d(0.3, 0.3, 0.3);
+			  transform: scale3d(0.3, 0.3, 0.3);
+			}
+		  
+			20% {
+			  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+			  transform: scale3d(1.1, 1.1, 1.1);
+			}
+		  
+			40% {
+			  -webkit-transform: scale3d(0.9, 0.9, 0.9);
+			  transform: scale3d(0.9, 0.9, 0.9);
+			}
+		  
+			60% {
+			  opacity: 1;
+			  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+			  transform: scale3d(1.03, 1.03, 1.03);
+			}
+		  
+			80% {
+			  -webkit-transform: scale3d(0.97, 0.97, 0.97);
+			  transform: scale3d(0.97, 0.97, 0.97);
+			}
+		  
+			to {
+			  opacity: 1;
+			  -webkit-transform: scale3d(1, 1, 1);
+			  transform: scale3d(1, 1, 1);
+			}
+		  }
+		  
+		  .bounceIn {
+			-webkit-animation-duration: 0.75s;
+			animation-duration: 0.75s;
+			-webkit-animation-name: bounceIn;
+			animation-name: bounceIn;
+		  }
+		  
+		  
 
 	/* Reset css */
 	html, body, div, span, applet, object, iframe,
@@ -198,8 +300,146 @@
 			width: 108px;
 	}
 
+	/*search wrapper*/
+	#searchWrapper{
+		width: 100%;
+		height: 0px;
+		box-shadow: 0 10px 9px 0 rgba(229, 229, 229, 0.5);
+		background-color: #ffffff;
+		position: absolute;
+		top: 84px;
+		z-index: 1;
+		padding:0px 80px 0px 404px;
+		overflow: hidden ;
+	}
+	#searchWrapper .Enter-Job-Title-or-L{
+	width: 230px;
+	height: 30px;
+	font-family: 'proxima_nova_rgregular';
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	border: 0px;
+	border-bottom:1px solid #898989;
+	line-height: 1.5;
+	letter-spacing: normal;
+	
+	width: 677px;
+	-webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: transparent;    padding-bottom: 19px;
+  }
 
+  .magnifer2 > div{
+	width: 20px;
+    height: 20px;
+    border: 2px solid #4a4a4a;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    cursor: pointer;
+  }
+  .magnifer2 > span{
+	width: 10px;
+    height: 2px;
+    position: absolute;
+    right: -4px;
+    top: 23px;
+    background: #4a4a4a;
+    transform: rotate(-315deg);
+    cursor: pointer;
+  }
+  #searchWrapper form{
+	position: relative;width: 677px;    margin-top: 45px;
+  }
+  #searchWrapper .Enter-Job-Title-or-L-Bottom{
+    width: 100%;            
+    border-bottom: 1px solid #898989;  
+}
+#searchWrapper .magnifier{
+	position: absolute;
+    right: 0px;
+    top: 4px;
+    width: 22px;
+    cursor: pointer;
+}
+  #searchWrapper .Enter-Job-Title-or-L::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #737373;
+	opacity: 1; /* Firefox */
+  }
+  
+  #searchWrapper .Enter-Job-Title-or-L:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #737373;
+  }
+  
+  #searchWrapper .Enter-Job-Title-or-L::-ms-input-placeholder { /* Microsoft Edge */
+	color: #737373;
+  }
+  #searchWrapper .Enter-Job-Title-or-L:focus{outline:0;}
 
+  #searchWrapper .Job-Categories {
+	font-family: 'proxima_nova_rgregular';
+	font-size: 12px;
+	font-weight: 100;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2;
+	letter-spacing: 0.2px;
+	color: #c6c6c6;
+    text-transform: uppercase;
+	margin-top:32px;
+  }
+
+  #searchWrapper li {
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: 0.3px;
+	color: #4a4a4a;
+	margin-top:8px;
+	font-family: 'proxima_nova_ltsemibold';
+	cursor: pointer;
+  }
+  #searchWrapper li.redColor{
+	  color:#ff4d6b;
+  }
+  .xBT{    position: absolute;
+    right: 80px;
+    top: 34px;
+    font-size: 30px;
+    color: #898989;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+  .navbar{z-index: 1;}
+  #overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: fixed;
+	width: 1440px;
+	margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	z-index: 0;
+	display:none;
+  }
 	/* second section */
 
 	.secondSection { 
@@ -347,6 +587,7 @@
 			font-stretch: normal;
 			line-height: 1.25;
 			letter-spacing: 0.3px;
+			cursor: pointer;
 			text-align: center;
 			color: #006ac3;float: right;
 			margin-top:18px;
@@ -374,6 +615,59 @@
 		.forthSection .headerimage {
 			width: 408px;
 			height: 460px;
+		}
+		.forthSection .hoveredImage{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height: 460px;
+			background-color: rgba(0, 0, 0, 0.75);
+		font-family: 'ProximaNova-SemiboldIt';
+			padding:97px 72px;
+			display:none;
+		}
+		.forthSection		.The-vision-for-Hilto {
+			width: 264px;
+			height: 96px;
+			font-family: 'proxima_nova_rgregular';
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.5;
+			letter-spacing: normal;
+			text-align: center;
+			color: #ffffff;
+		  }
+		  .forthSection	 .Group-20-Copy-111{
+		  margin: 15px auto 38px auto;
+		  display: block;}
+		  .forthSection	h3{
+			font-family: 'proxima_nova_rgregular';
+		  font-size: 20px;
+		  font-weight: bold;
+		  font-style: normal;
+		  font-stretch: normal;
+		  line-height: normal;
+		  letter-spacing: -0.2px;
+		  text-align: center;
+		  color: #ffffff;
+		}
+		.forthSection	h3 .text-style-1{
+			font-size: 18px;
+			font-weight: 300;
+		}
+		.forthSection	.viewJobs{
+			width: 176px;
+			height: 44px;
+			border: 1px solid #fff;
+			font-family: 'proxima_nova_ltsemibold';
+			padding: 10px;
+			color: #fff; cursor: pointer;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 40px;
 		}
 		.forthSection ul li{
 			position: relative;
@@ -422,6 +716,7 @@
 			background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
 		}
 
+		
 		.fifthSection{
 			padding:38px 80px 124px; overflow: auto;
 		}
@@ -526,7 +821,7 @@
 		.sixthSection   .Group-12-Copy-3 {
 			width: 52px;
 			height: 52px;
-			object-fit: contain;
+			object-fit: contain;cursor: pointer;
 			position: absolute; left:-27px; top:128px;
 		  }.sixthSection .Kate-Allison {
 			margin: 0 auto;
@@ -584,7 +879,7 @@
 			;
 		  }
 		  .sixthSection   .Group-12-Copy-2 {
-			width: 52px;
+			width: 52px; cursor: pointer;
 			height: 52px;
 			object-fit: contain;position: absolute; right:-27px; top:128px;
 		  }
