@@ -10,7 +10,8 @@ $(function() {
         prevArrow: $('#prevArrow')
     });
 
-    $('#search , .xBT').click( function() {
+    $('#search , .xBT , #overlay').click( function() {
+        console.log("x");
         var searchOpen = $('#searchWrapper').height() > 0 ? false : true;
         if (searchOpen){
             $('#searchWrapper').animate({ height: "427px" });
