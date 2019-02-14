@@ -1,290 +1,274 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Roni Chabra - Home Assignment - Frontend Developer - Phenom People</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" href="content/images/icon.png">
-    <!-- CSS  -->
-    <link href="content/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-    <link href="content/css/slick.css" type="text/css" rel="stylesheet" />
-    <link href="content/css/style.css" type="text/css" rel="stylesheet" />
-    <!--  Scripts-->
-    <script src="content/js/jquery.js"></script>
-    <script src="content/js/bootstrap.min.js"></script>
-    <script src="content/js/slick.min.js"></script>
-    <script src="content/js/script.js"></script>
-    <script type="text/javascript" src="http://livejs.com/live.js"></script>
-</head>
-
-<body>
-    <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light Rectangle">
+   <head>
+      <title>Roni Chabra - Home Assignment - Frontend Developer - Phenom People</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="icon" href="content/images/icon.png">
+      <!-- CSS  -->
+      <link href="content/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+      <link href="content/css/slick.css" type="text/css" rel="stylesheet" />
+      <link href="content/css/style.css" type="text/css" rel="stylesheet" />
+      <!--  Scripts-->
+      <script src="content/js/jquery.js"></script>
+      <script src="content/js/bootstrap.min.js"></script>
+      <script src="content/js/slick.min.js"></script>
+      <script src="content/js/script.js"></script>
+      <script src="http://livejs.com/live.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <nav class="navbar navbar-expand-lg navbar-light Rectangle">
             <div class="logoWrapper">
-            <img src="content/images/hilton-worldwide-logo.svg" class="Hilton_Worldwide_logo">
-            <p class="Careers">Careers</p></div>
+               <img src="content/images/hilton-worldwide-logo.svg" class="Hilton_Worldwide_logo">
+               <p class="Careers">Careers</p>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+               aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav navLinks">
-                    <li class="nav-item cl-effect-1">
-                        <a class="disabled" href="#">Discover Hilton</a>
-                    </li>
-                    <li class="nav-item cl-effect-1">
-                        <a class="disabled" href="#">Our Brands</a>
-                    </li>
-                    <li class="nav-item cl-effect-1 ">
-                        <a class="disabled" href="#">University</a>
-                    </li>
-                    <li class="nav-item  cl-effect-1">
-                        <a class="disabled" href="#">Military</a>
-                    </li>
-                    <li class="nav-item  cl-effect-1">
-                        <a class="disabled" href="#">Areas of Talent</a>
-                    </li>
-                </ul>
-                <div class="rightNav">
-                    <ul>
-                        <li>
-                            <img src="content/images/group-2.svg" class="Group-2">
-                            <p>Sign In</p>
-                        </li>
-                        <li>
-                            <img src="content/images/group-3.svg" class="Group-3">
-                            <p>Saved Jobs</p>
-                        </li>
-                        <li id="search">
-                            <img src="content/images/group-2-copy.svg" class="Group-2-Copy">
-                            <p>Search Jobs</p>
-                        </li>
-                    </ul>
-                </div>
+               <ul class="navbar-nav navLinks">
+                  <li class="nav-item cl-effect-1">
+                     <a class="disabled" href="#">Discover Hilton</a>
+                  </li>
+                  <li class="nav-item cl-effect-1">
+                     <a class="disabled" href="#">Our Brands</a>
+                  </li>
+                  <li class="nav-item cl-effect-1 ">
+                     <a class="disabled" href="#">University</a>
+                  </li>
+                  <li class="nav-item  cl-effect-1">
+                     <a class="disabled" href="#">Military</a>
+                  </li>
+                  <li class="nav-item  cl-effect-1">
+                     <a class="disabled" href="#">Areas of Talent</a>
+                  </li>
+               </ul>
+               <div class="rightNav">
+                  <ul>
+                     <li>
+                        <img src="content/images/group-2.svg" class="Group-2">
+                        <p>Sign In</p>
+                     </li>
+                     <li>
+                        <img src="content/images/group-3.svg" class="Group-3">
+                        <p>Saved Jobs</p>
+                     </li>
+                     <li id="search">
+                        <img src="content/images/group-2-copy.svg" class="Group-2-Copy">
+                        <p>Search Jobs</p>
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </nav>
-        <div id="searchWrapper">
+         </nav>
+         <div id="searchWrapper">
             <form>
-                <input type="text" id="searchInput" autocomplete="off"  placeholder="Enter Job Title or Location" class="Enter-Job-Title-or-L"  />
-                <div class="Enter-Job-Title-or-L-Bottom"></div>
-                <div class="magnifer2">
-                    <div> </div>
-                    <span></span>
-                </div>
-                <div class="searchResults">
-                    <h5 class="Job-Categories">Job Categories</h5>
-                    <ul>
-                        <li>Business Development</li>
-                        <li>Engineering</li>
-                        <li>Information Technology</li>
-                        <li>Sales</li>
-                        <li>Marketing manager</li>
-                    </ul>
-                </div>
+               <input type="text" id="searchInput" autocomplete="off"  placeholder="Enter Job Title or Location" class="Enter-Job-Title-or-L"  />
+               <div class="Enter-Job-Title-or-L-Bottom"></div>
+               <div class="magnifer2">
+                  <div> </div>
+                  <span></span>
+               </div>
+               <div class="searchResults">
+                  <h5 class="Job-Categories">Job Categories</h5>
+                  <ul>
+                     <li>Business Development</li>
+                     <li>Engineering</li>
+                     <li>Information Technology</li>
+                     <li>Sales</li>
+                     <li>Marketing manager</li>
+                  </ul>
+               </div>
             </form>
             <div class="xBT">&#10005;</div>
-        </div>
-        <div class="secondSection">
+         </div>
+         <div class="secondSection">
             <div class="whiteBorder">
-                <p class="Share-your-travel">Share your travel</p>
-                <p class="experience-with-us ">experience with us</p>
-                <div class="secondSectionForm">
-                    <input type="text" placeholder="Keyword, Job Title or Job ID" class="Keyword-Job-Title-o" />
-                    <input type="text" placeholder="Country, State or City" class="Keyword-Job-Title-o" />
-                    <button class="submitBT"><span class="Find-Jobs">Find Jobs</span></button>
-                </div>
-                <div class="dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <img src="content/images/group-32.svg" class="Group-32">
+               <p class="Share-your-travel">Share your travel</p>
+               <p class="experience-with-us ">experience with us</p>
+               <div class="secondSectionForm">
+                  <input type="text" placeholder="Keyword, Job Title or Job ID" class="Keyword-Job-Title-o" />
+                  <input type="text" placeholder="Country, State or City" class="Keyword-Job-Title-o" />
+                  <button class="submitBT"><span class="Find-Jobs">Find Jobs</span></button>
+               </div>
+               <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <img src="content/images/group-32.svg" class="Group-32">
             </div>
-        </div>
-        <div class="thirdSection container">
+         </div>
+         <div class="thirdSection container">
             <div class="row">
-                <div class="col-md-8 no-padding">
-                    <h3 class="Get-Personalized-Job">Get Personalized Job Recommendations</h3>
-                    <h4 class="Import-your-profile">Import your profile to find opportunities tailored for your talents
-                    </h4>
-                </div>
-                <div class="col-md-4  col-4 no-padding">
-                    <button class="Connect-with-LinkedI">Connect with <span class="text-style-1">LinkedIn
-                        </span></button>
-                </div>
+               <div class="col-md-8 no-padding">
+                  <h3 class="Get-Personalized-Job">Get Personalized Job Recommendations</h3>
+                  <h4 class="Import-your-profile">Import your profile to find opportunities tailored for your talents
+                  </h4>
+               </div>
+               <div class="col-md-4  col-4 no-padding">
+                  <button class="Connect-with-LinkedI">Connect with <span class="text-style-1">LinkedIn
+                  </span></button>
+               </div>
             </div>
-        </div>
-        <div class="forthSection container">
+         </div>
+         <div class="forthSection container">
             <p class="Choose-Your-Path">Choose Your Path</p>
             <ul>
-                <li>
-                    <img class="headerimage" src="content/images/firstIMG.jpg" />
-                    <div class="mask"></div>
-                    <p class="hImgTitle">Corporate <span class="text-style-1">( 86 )</span> </p>
-                    <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-11">
-
-
-                    <div class="hoveredImage  animated bounceIn">
-
-                        <h3>Corporate <span class="text-style-1">( 86 )</span> </h3>
-                        <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-111">
-                        <h4 class="The-vision-for-Hilto">
-                            The vision for Hilton’s Corporate team is to be a trusted business partner that serves as a
-                            catalyst in driving our company’s mission.
-                        </h4>
-                        <div class="viewJobs">View Jobs</div>
-                    </div>
-
-
-                </li>
-                <li>
-                    <img class="headerimage" src="content/images/secondIMG.jpg" />
-                    <div class="mask"></div>
-                    <p class="hImgTitle">Guest Services <span class="text-style-1">( 104 )</span> </p>
-                    <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-11">
-                    <div class="hoveredImage  animated bounceIn">
-
-                        <h3>Corporate <span class="text-style-1">( 86 )</span> </h3>
-                        <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-111">
-                        <h4 class="The-vision-for-Hilto">
-                            The vision for Hilton’s Corporate team is to be a trusted business partner that serves as a
-                            catalyst in driving our company’s mission.
-                        </h4>
-                        <div class="viewJobs">View Jobs</div>
-                    </div>
-                </li>
-                <li>
-                    <img class="headerimage" src="content/images/thirdIMG.jpg" />
-                    <div class="mask"></div>
-                    <p class="hImgTitle">Students <span class="text-style-1">( 24 )</span> </p>
-                    <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-11">
-                    <div class="hoveredImage animated bounceIn">
-
-                        <h3>Corporate <span class="text-style-1">( 86 )</span> </h3>
-                        <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-111">
-                        <h4 class="The-vision-for-Hilto">
-                            The vision for Hilton’s Corporate team is to be a trusted business partner that serves as a
-                            catalyst in driving our company’s mission.
-                        </h4>
-                        <div class="viewJobs">View Jobs</div>
-                    </div>
+               <li>
+                  <img class="headerimage" src="content/images/firstIMG.jpg" />
+                  <div class="mask"></div>
+                  <p class="hImgTitle">Corporate <span class="text-style-1">( 86 )</span> </p>
+                  <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-11">
+                  <div class="hoveredImage  animated bounceIn">
+                     <h3>Corporate <span class="text-style-1">( 86 )</span> </h3>
+                     <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-111">
+                     <h4 class="The-vision-for-Hilto">
+                        The vision for Hilton’s Corporate team is to be a trusted business partner that serves as a
+                        catalyst in driving our company’s mission.
+                     </h4>
+                     <div class="viewJobs">View Jobs</div>
+                  </div>
+               </li>
+               <li>
+                  <img class="headerimage" src="content/images/secondIMG.jpg" />
+                  <div class="mask"></div>
+                  <p class="hImgTitle">Guest Services <span class="text-style-1">( 104 )</span> </p>
+                  <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-11">
+                  <div class="hoveredImage  animated bounceIn">
+                     <h3>Corporate <span class="text-style-1">( 86 )</span> </h3>
+                     <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-111">
+                     <h4 class="The-vision-for-Hilto">
+                        The vision for Hilton’s Corporate team is to be a trusted business partner that serves as a
+                        catalyst in driving our company’s mission.
+                     </h4>
+                     <div class="viewJobs">View Jobs</div>
+                  </div>
+               </li>
+               <li>
+                  <img class="headerimage" src="content/images/thirdIMG.jpg" />
+                  <div class="mask"></div>
+                  <p class="hImgTitle">Students <span class="text-style-1">( 24 )</span> </p>
+                  <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-11">
+                  <div class="hoveredImage animated bounceIn">
+                     <h3>Corporate <span class="text-style-1">( 86 )</span> </h3>
+                     <img src="content/images/group-20-copy-11.svg" class="Group-20-Copy-111">
+                     <h4 class="The-vision-for-Hilto">
+                        The vision for Hilton’s Corporate team is to be a trusted business partner that serves as a
+                        catalyst in driving our company’s mission.
+                     </h4>
+                     <div class="viewJobs">View Jobs</div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <!-- <div class="fifthSection container">
+            <p class="find-your-talent">find your talent</p>
+            <ul>
+               <li class="Rectangle">
+                    <img src="content/images/group-28.svg" class="Group-28">
+                    <p class="Work-from-Home">Work from Home</p>
+                    <h5>( 83 )</h5>
+               </li>
+               <li class="Rectangle">
+                    <img src="content/images/group-28.svg"
+                    class="Group-28">
+                    <p class="Work-from-Home">Work from Home</p>
+                    <h5>( 83 )</h5>
                 </li>
             </ul>
-        </div>
-        <!-- <div class="fifthSection container">
-                <p class="find-your-talent">find your talent</p>
-                <ul>
-                   <li class="Rectangle">
-                        <img src="content/images/group-28.svg" class="Group-28">
-                        <p class="Work-from-Home">Work from Home</p>
-                        <h5>( 83 )</h5>
-                   </li>
-                   <li class="Rectangle">
-                        <img src="content/images/group-28.svg"
-                        class="Group-28">
-                        <p class="Work-from-Home">Work from Home</p>
-                        <h5>( 83 )</h5>
-                    </li>
-                </ul>
-             </div>
+            </div>
             -->
-        <div class="sixthSection container no-padding">
+         <div class="sixthSection container no-padding">
             <p class="team-member-stories">team member stories</p>
             <div class="sixthWrapper">
-                <section class="whiteDiv">
-                    <div id="prevArrow">
-                            <img src="content/images/arrow.png" class="Group-12-Copy-3"  >
-                    </div>
+               <section class="whiteDiv">
+                  <div id="prevArrow">
+                     <img src="content/images/arrow.png" class="Group-12-Copy-3"  >
+                  </div>
                   <div  id="nextArrow">
-                    <img src="content/images/arrow.png" class="Group-12-Copy-2"></div>
-                <ul>
-                    <li class="Rectangle-Copy-6">
+                     <img src="content/images/arrow.png" class="Group-12-Copy-2">
+                  </div>
+                  <ul>
+                     <li class="Rectangle-Copy-6">
                         <div class="sixthSectionLeft">
-                            <img src="content/images/bitmap-copy-4.png"  class="Bitmap-Copy-4" />
-
-                            <div class="Line-Copy align-middle"></div>
-                            <p class="Kate-Allison">Kate Allison</p>
-                            <h5 class="Revenue-Manager-at-C">Revenue Manager at Conrad Bali</h5>
+                           <img src="content/images/bitmap-copy-4.png"  class="Bitmap-Copy-4" />
+                           <div class="Line-Copy align-middle"></div>
+                           <p class="Kate-Allison">Kate Allison</p>
+                           <h5 class="Revenue-Manager-at-C">Revenue Manager at Conrad Bali</h5>
                         </div>
                         <div class="Line-3-Copy"></div>
                         <div class="sixthSectionRight">
-                            <p class="People-will-most-li">“People will most likely forget what you said, forget what
-                                you
-                                did, but people will never forget how you made them feel.”</p>
+                           <p class="People-will-most-li">“People will most likely forget what you said, forget what
+                              you
+                              did, but people will never forget how you made them feel.”
+                           </p>
                         </div>
-
-                    </li>
-                    <li class="Rectangle-Copy-6">
-                            <div class="sixthSectionLeft">
-                                <img src="content/images/bitmap-copy-4 2.png"  class="Bitmap-Copy-4" />
-    
-                                <div class="Line-Copy align-middle"></div>
-                                <p class="Kate-Allison">Lora Sullivan</p>
-                                <h5 class="Revenue-Manager-at-C">Head of Marketing</h5>
-                            </div>
-                            <div class="Line-3-Copy"></div>
-                            <div class="sixthSectionRight">
-                                <p class="People-will-most-li">“We are a business serving people, and our Team Members extend their passion for hospitality beyond our hotel walls every day.”</p>
-                            </div>
-    
-                        </li>
-                        <li class="Rectangle-Copy-6">
-                                <div class="sixthSectionLeft">
-                                    <img src="content/images/bitmap-copy-4.png" class="Bitmap-Copy-4" />
-        
-                                    <div class="Line-Copy align-middle"></div>
-                                    <p class="Kate-Allison">Kate Allison</p>
-                                    <h5 class="Revenue-Manager-at-C">Revenue Manager at Conrad Bali</h5>
-                                </div>
-                                <div class="Line-3-Copy"></div>
-                                <div class="sixthSectionRight">
-                                    <p class="People-will-most-li">“People will most likely forget what you said, forget what
-                                        you
-                                        did, but people will never forget how you made them feel.”</p>
-                                </div>
-        
-                            </li>
-                            <li class="Rectangle-Copy-6">
-                                    <div class="sixthSectionLeft">
-                                        <img src="content/images/bitmap-copy-4 2.png" class="Bitmap-Copy-4" />
-            
-                                        <div class="Line-Copy align-middle"></div>
-                                        <p class="Kate-Allison">Lora Sullivan</p>
-                                        <h5 class="Revenue-Manager-at-C">Head of Marketing</h5>
-                                    </div>
-                                    <div class="Line-3-Copy"></div>
-                                    <div class="sixthSectionRight">
-                                        <p class="People-will-most-li">“We are a business serving people, and our Team Members extend their passion for hospitality beyond our hotel walls every day.”</p>
-                                    </div>
-            
-                                </li>
-        
-                </ul>
-            </section>
-              
+                     </li>
+                     <li class="Rectangle-Copy-6">
+                        <div class="sixthSectionLeft">
+                           <img src="content/images/bitmap-copy-4 2.png"  class="Bitmap-Copy-4" />
+                           <div class="Line-Copy align-middle"></div>
+                           <p class="Kate-Allison">Lora Sullivan</p>
+                           <h5 class="Revenue-Manager-at-C">Head of Marketing</h5>
+                        </div>
+                        <div class="Line-3-Copy"></div>
+                        <div class="sixthSectionRight">
+                           <p class="People-will-most-li">“We are a business serving people, and our Team Members extend their passion for hospitality beyond our hotel walls every day.”</p>
+                        </div>
+                     </li>
+                     <li class="Rectangle-Copy-6">
+                        <div class="sixthSectionLeft">
+                           <img src="content/images/bitmap-copy-4.png" class="Bitmap-Copy-4" />
+                           <div class="Line-Copy align-middle"></div>
+                           <p class="Kate-Allison">Kate Allison</p>
+                           <h5 class="Revenue-Manager-at-C">Revenue Manager at Conrad Bali</h5>
+                        </div>
+                        <div class="Line-3-Copy"></div>
+                        <div class="sixthSectionRight">
+                           <p class="People-will-most-li">“People will most likely forget what you said, forget what
+                              you
+                              did, but people will never forget how you made them feel.”
+                           </p>
+                        </div>
+                     </li>
+                     <li class="Rectangle-Copy-6">
+                        <div class="sixthSectionLeft">
+                           <img src="content/images/bitmap-copy-4 2.png" class="Bitmap-Copy-4" />
+                           <div class="Line-Copy align-middle"></div>
+                           <p class="Kate-Allison">Lora Sullivan</p>
+                           <h5 class="Revenue-Manager-at-C">Head of Marketing</h5>
+                        </div>
+                        <div class="Line-3-Copy"></div>
+                        <div class="sixthSectionRight">
+                           <p class="People-will-most-li">“We are a business serving people, and our Team Members extend their passion for hospitality beyond our hotel walls every day.”</p>
+                        </div>
+                     </li>
+                  </ul>
+               </section>
             </div>
-        </div>
-        <div class="footer">
+         </div>
+         <div class="footer">
             <div class="contact">Contact Us</div>
             <ul>
-                <li>global privacy statment</li>
-                <li>|</li>
-                <li>cookies statment</li>
-                <li>|</li>
-                <li>site usage agreements</li>
-                <li>|</li>
-                <li>site map</li>
-                <li>|</li>
-                <li>2018 hilton</li>
-                <li>|</li>
-                <li>adchoices</li>
+               <li class="nav-item cl-effect-1"><a href="#">global privacy statment</a></li>
+               <li>|</li>
+               <li  class="nav-item cl-effect-1"><a href="#">cookies statment</a></li>
+               <li>|</li>
+               <li  class="nav-item cl-effect-1"><a href="#">site usage agreements</a></li>
+               <li>|</li>
+               <li  class="nav-item cl-effect-1"><a href="#">site map</a></li>
+               <li>|</li>
+               <li  class="nav-item cl-effect-1"><a href="#">2018 hilton</a></li>
+               <li>|</li>
+               <li  class="nav-item cl-effect-1"><a href="#">adchoices</a></li>
             </ul>
-        </div>
-    </div>
-    <!-- Wrapper End -->
-    <div id="overlay"></div>
-</body>
-
+         </div>
+      </div>
+      <!-- Wrapper End -->
+      <div id="overlay"></div>
+   </body>
 </html>
