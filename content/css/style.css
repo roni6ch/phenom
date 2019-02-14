@@ -307,7 +307,47 @@ table {
 	height: 42px;
 	object-fit: contain;
 }
+.logoWrapper{
+	cursor: pointer;
 
+}
+.logoWrapper:hover{
+	-webkit-animation: pulsate-fwd 0.5s ease-in-out  both;
+	animation: pulsate-fwd 0.5s ease-in-out  both;
+
+}
+
+@-webkit-keyframes pulsate-fwd {
+	0% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+	50% {
+	  -webkit-transform: scale(1.1);
+			  transform: scale(1.1);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+  }
+  @keyframes pulsate-fwd {
+	0% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+	50% {
+	  -webkit-transform: scale(1.1);
+			  transform: scale(1.1);
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	}
+  }
+  
+  
+  
 .Careers {
 	width: 114px;
 	height: 24px;
@@ -321,6 +361,7 @@ table {
 	color: #3f3f3f;
 	float: right;
 	margin-left: 8px;
+	margin-top:9px;
 }
 
 .searchResults{
@@ -339,7 +380,51 @@ table {
 	letter-spacing: normal;
 	text-align: center;
 	color: #3f3f3f !important;
+	text-decoration: none;
 }
+
+
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+
+
+
+
 
 .Group-3 {
 	width: 18px;
@@ -365,6 +450,9 @@ table {
 
 .rightNav li {
 	cursor: pointer;
+}
+.rightNav li:hover{
+	opacity:0.7
 }
 
 .rightNav img {
@@ -398,7 +486,6 @@ table {
 li.nav-item {
 	text-align: center;
 	margin: 0px 5px;
-	width: 108px;
 }
 
 
@@ -648,7 +735,7 @@ li.nav-item {
 	font-size: 63px;
 	font-weight: 900;
 	font-style: normal;
-	margin-top: -28px;
+	margin-top: 0px;
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
