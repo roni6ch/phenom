@@ -323,7 +323,9 @@ table {
 	margin-left: 8px;
 }
 
-
+.searchResults{
+	display:none;
+}
 /* Nav Icons */
 
 .nav-item a {
@@ -443,9 +445,7 @@ li.nav-item {
 	background-color: transparent;
 	padding-bottom: 19px;
 }
-#searchWrapper .searchResults{
-	display:none;
-}
+
 .magnifer2>div {
 	width: 20px;
 	height: 20px;
@@ -534,7 +534,7 @@ li.nav-item {
 	cursor: pointer;
 }
 
-#searchWrapper li.redColor {
+#searchWrapper li:hover {
 	color: #ff4d6b;
 }
 
@@ -567,6 +567,55 @@ li.nav-item {
 }
 
 
+
+
+@keyframes bg {
+    0% {
+        background-size:    0 18px,
+                            18px 0,
+                            0 18px,
+                            18px 0;
+    }
+    50% {
+        background-size:    100% 18px,
+                            18px 0%,
+                            0% 18px,
+							18px 100%;
+    }
+    100% {
+        background-size:    100% 18px,
+							18px 65%,
+                            80% 18px,
+							18px 100%;
+    }
+}
+
+.secondSection .whiteBorder {
+    width: 18px;
+    margin: 0rem auto;
+    padding: 0em;
+    
+    background-repeat: no-repeat;
+    background-image:   linear-gradient(to right, #fff 100%, #fff 100%),
+                        linear-gradient(to bottom, #fff 100%, #fff 100%),
+                        linear-gradient(to right, #fff 100%, #fff 100%),
+                        linear-gradient(to bottom, #fff 100%, #fff 100%);
+    background-size:    100% 18px,
+						18px 70%,
+                        70% 18px,
+                        18px 100%;
+    background-position:    0 0,
+                            100% 0,
+                            0 100%,
+                            0 0;
+    animation: bg 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: bg 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-play-state: paused;
+    animation-play-state: running;
+}
+
+
+
 /* second section */
 
 .secondSection {
@@ -578,7 +627,8 @@ li.nav-item {
 
 .secondSection .whiteBorder {
 	width: 100%;
-	border: 18px solid #fff;
+/*	border: 18px solid #fff; */
+	border-top-width:0%;
 	padding: 114px 60px 42px 80px;
 }
 
@@ -692,6 +742,7 @@ li.nav-item {
 	position: absolute;
 	right: 36px;
 	bottom: 31px;
+	cursor: pointer;
 }
 
 

@@ -1,4 +1,9 @@
 $(function() {
+
+    $(".secondSection .whiteBorder").animate({
+        'border-top-width':"100%",
+    },1000);
+
     $('.sixthWrapper ul').slick({
         dots: true,
         nextArrow: $('#nextArrow'),
@@ -27,12 +32,10 @@ $(function() {
         $(this).find(".hoveredImage").hide();
     });
 
-    
-    $("#searchInput").focusIn(function(){
-        alert("x");
+    $('#searchInput').focus( function() {
         $(".searchResults").fadeIn();
-    }, function(){  
+    }).focusout(function() {
         $(".searchResults").fadeOut();
-    })
+      })
     
 });
